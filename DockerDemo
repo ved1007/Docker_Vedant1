@@ -1,0 +1,26 @@
+Download Docker -----> yum install docker -y
+Start Docker -------->systemctl start docker 
+Enable Docker ------->systemctl enable docker
+What is Docker version--> docker --version
+docker info
+For more help ------->docker container --help
+How many running container --> docker container ls
+View Stop/Running containers -----> docker container ls -a
+create container and deploy image ---> docker container run ubuntu
+Run container in Background/Detached mode ----> docker container run -d ubuntu sleep 50 (It will close after 50 seconds)
+Interactive mode, (container will keep running) ----> docker container run -d -it ubuntu
+Stop ---> docker container stop + container ID
+Start ----> docker container start + container ID
+Restart ----> docker container restart + container ID
+Remove ----> docker container rm + container ID
+You cannot remove running container --> Stop container and remove or remove force fully
+Force Full Remove ----> docker container rm + container ID -f
+Create container and Go inside Container -----> docker container run -it ubuntu /bin/bash
+Find IP for Container --- > docker container inspect + container ID
+Curl http:// + IP address
+Docker container run -it ubuntu /bin/bash
+Apt git update
+Apt git install pache2 -y
+Cd /var/html
+Echo “Welcome to my docker page” > index.html
+Docker apace to start
